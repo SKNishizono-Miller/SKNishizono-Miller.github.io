@@ -1,1 +1,137 @@
-Currently under Development
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samuel Nishizono-Miller</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" /> -->
+
+    <!-- <script src="https://unpkg.com/tailwindcss-cdn@3.4.3/tailwindcss.js"></script> -->
+    <link href="./Assets/CSS/tailwind.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <!-- <script src="./Assets/JS/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#footerContent").load("Templates/Footer.html");
+        });
+    </script> -->
+</head>
+
+<body class="overflow-x-hidden">
+<nav class="bg-gray-100 dark:bg-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+
+        <a href="#" class="flex flex-wrap  items-center pr-5">
+            <span class="self-center pr-1 whitespace text-xl text-gray-900 dark:text-white font-semibold ">Samuel Kiyoshi</span>
+            <span class="self-center pr-3 whitespace text-xl text-gray-900 dark:text-white font-semibold "> Nishizono-Miller</span>
+            <span class="self-center whitespace text-lg text-gray-400 dark:text-white">/ Aerospace Engineer</span>
+        </a>
+
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0">
+            <!-- Language munu in navbar -->
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-centerv p-2 w-10 h-10 text-sm text-gray-900  rounded-lg cursor-pointer">
+                <img class="w-5 h-5 " src="Assets/Navbar/language.svg">
+            </button>
+
+            <!-- lanugage dropdown menu -->
+            <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+                <ul class="py-2 font-medium" role="none">
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                            <div class="inline-flex items-center">
+                            <img class="w-5 h-5 mr-2" src="https://hatscripts.github.io/circle-flags/flags/gb.svg">
+                            English
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                            <div class="inline-flex items-center">
+                            <img class="w-5 mr-2" src="https://hatscripts.github.io/circle-flags/flags/jp.svg">
+                            Japanese
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar" aria-expanded="false">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    <span class="sr-only">Open main menu</span>
+                </svg>
+            </button>
+        </div>
+
+
+        <!-- Navbar options -->
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 px-4" id="navbar">
+            <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 md:space-x-8 md:border-0  dark:border-gray-700">
+                <li>
+                    <a href="#" class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CV</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="mt-20 pt-2 pb-5 max-w-screen-xl mx-auto">
+
+<p>
+This is currently a <u>temperary website</u>. It is under construction.
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-gray-100 dark:bg-gray-800 w-full">
+    <!-- <div id="footerContent"></div> -->
+    <div class="max-w-screen-xl mx-auto px-4 py-6 bg-gray-100 flex flex-col-reverse md:flex-row md:justify-between">
+        <span class="pt-8 md:pt-2 text-sm text-gray-500 dark:text-gray-300">© 2024 <a href="#">Samuel Kiyoshi Nishizono-Miller</a>. All Rights Reserved.</span>
+
+        <div class="space-x-5 grid grid-rows-2 grid-cols-2">
+            <div class="text-sm text-center text-gray-500">E-mail</div>
+            <div class="text-sm text-center text-gray-500">Follow</div>
+
+            <a class="text-sm text-center text-gray-400 hover:text-gray-900" href=mailto:"kiyoshi.sknm@pm.me">kiyoshi.sknm@pm.me</a>
+            <div class="flex justify-center">
+                <a href="https://www.linkedin.com/in/samuel-nishizono-miller/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path fill="currentColor" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" /></svg>
+                    <span class="sr-only">Linkedin</span>
+                </a>
+                <a href="https://github.com/SKNishizono-Miller" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16"><path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/></svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
