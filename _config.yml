@@ -1,10 +1,14 @@
 lang: en
 languages: ["en", "jp"]
-exclude_from_localizations: ["Assets","README.md","favicon.ico","404.html","base.html","sitemap.xml"]
+exclude: ["LICENSE.txt", "README.md","Gemfile"]
+exclude_from_localizations: ["Assets","favicon.ico","404.html","base.html","sitemap.xml"]
 default_locale_in_subfolder: true
 # permalink: /:categories/:year/:month/:day/:title/
 
+# destination: doc
 
 plugins:
   - jekyll-multiple-languages-plugin
   # - jekyll-sitemap
+
+
