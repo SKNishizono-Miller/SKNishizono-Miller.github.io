@@ -1,0 +1,22 @@
+site:
+    title: "西園ミラーサミュエル聖"
+
+    name1: "西園ミラー"
+    name2: "サミュエル聖"
+    job: "航空宇宙エンジニア"
+    home: "ホーム"
+    cv: "履歴書"
+    project: "プロジェクト"
+    contact: "お問い合わせ"
+
+    email: "メール"
+    follow: "フォロー"
+
+
+titles:
+    home: "ホーム"
+    cv: "履歴書"
+
+main:
+    temp: "これは仮のウェブサイトです。健在開発中です。"
+

@@ -1,0 +1,20 @@
+site:
+    title: "Samuel Nishizono-Miller"
+
+    name1: "Samuel Kiyoshi"
+    name2: "Nishizono-Miller"
+    job: "Aerospace Engineer"
+    home: "Home"
+    cv: "CV"
+    project: "Projects"
+    contact: "Contacts"
+
+    email: "E-mail"
+    follow: "Follow"
+
+titles:
+    home: "Home"
+    cv: "CV"
+
+main:
+    temp: "This is currently a <u>temperary website</u>. It is under construction."

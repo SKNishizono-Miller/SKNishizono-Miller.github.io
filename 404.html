@@ -125,21 +125,14 @@
 <body>
     <div class="noise"></div>
     <div class="overlay"></div>
-   <!--  <div class="terminal">
-        <h1>Error <span class="errorcode">404</span></h1>
-        <p class="output">The page you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
-        <p class="output">Please try to <a href="#1">go back</a> or <a href="#2">return to the homepage</a>.</p>
-        <p class="output">Good luck.</p>
-    </div> -->
 
     <div class="terminal">
         <h1>Error <span class="errorcode">404</span></h1>
+        <code><p>Click Here to <a href="javascript:history.back()">go Back</a> or <a href="/">go Home</a> </p></code>
         <code><p class="output">this_page.<em>not_found</em> = true;</p></code>
         <code><p class="output">if (<b>you_spelt_it_wrong</b>) {try_again();}</p></code>
         <code><p class="output">else if (<b>we_screwed_up</b>) {<em>alert</em>(<i>"We're really sorry about that."</i>); window.<em>location</em> = home;}</p></code>
-        <code><p>Click Here to <a href="javascript:history.back()">go Back</a> or <a href="../">go Home</a> </p></code>
-        <!-- <code><span>if</span> (<b>you_spelt_it_wrong</b>) {<span>try_again()</span>;}</code> -->
-        <!-- <code><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i>"We're really sorry about that."</i>); <span>window</span>.<em>location</em> = home;} -->
+
     </div>
 
     <script type="text/javascript">
@@ -162,9 +155,9 @@
         }
 
         type(0, 0);
-        type(1, 1000);
-        type(2, 2000);
-        type(3, 4000);
+        type(1, 800);
+        type(2, 1500);
+        type(3, 2200);
 
      </script>
 
