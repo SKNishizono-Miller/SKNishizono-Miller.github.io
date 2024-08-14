@@ -11,13 +11,13 @@
 </head>
 
 <body class="overflow-x-hidden font-serif dark:bg-gray-900 dark:text-white">
-<nav class="bg-gray-100 dark:bg-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600" id="nav">
+<nav class="bg-gray-100 dark:bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-sm fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600" id="nav">
     <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
 
         <a href="" class="flex flex-wrap  items-center pr-5">
-            <span class="self-center pr-1 whitespace text-xl text-gray-900 dark:text-gray-100 font-semibold ">西園ミラー</span>
-            <span class="self-center pr-3 whitespace text-xl text-gray-900 dark:text-gray-100 font-semibold ">サミュエル聖</span>
-            <span class="self-center whitespace text-lg text-gray-400 dark:text-gray-400">/ 航空宇宙エンジニア</span>
+            <span class="self-center pr-1 whitespace md:text-xl text-gray-900 dark:text-gray-100 font-semibold ">西園ミラー</span>
+            <span class="self-center pr-3 whitespace md:text-xl text-gray-900 dark:text-gray-100 font-semibold ">サミュエル聖</span>
+            <span class="self-center whitespace text-sm md:text-lg text-gray-400 dark:text-gray-400">/ 航空宇宙エンジニア</span>
         </a>
 
         <div class="flex items-center md:order-2 space-x-1 md:space-x-0">
@@ -49,7 +49,7 @@
             </div>
 
             <!-- Hamburger Menu -->
-            <button data-collapse-toggle="hamburger-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="hamburger-menu" aria-expanded="false" id="McBag">
+            <button data-collapse-toggle="hamburger-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="hamburger-menu" aria-expanded="false" id="McBag" onclick="document.getElementById('McButton').classList.toggle('open');">
                 <div id="McButton" class="w-5 h-5">
                   <span class="bg-gray-950 dark:bg-gray-300"></span>
                   <span class="bg-gray-950 dark:bg-gray-300"></span>
@@ -97,7 +97,7 @@
         </ul>
     </div>
 </nav>
-<div id="nav_padding"></div>
+<!-- <div id="nav_padding"></div> -->
 
 
 
@@ -107,8 +107,13 @@
 
 
 
-<div class="pt-2 pb-5 px-4 max-w-screen-xl mx-auto">
+<div class="px-4 max-w-screen-xl mx-auto">
+    <div id="nav_padding"></div>
+
+<p class="pt-2 pb-5">
     This is the content of my page
+</p>
+
 
 </div>
 
@@ -155,12 +160,25 @@
     let nav = document.getElementById("nav");
     let nav_padding = document.getElementById("nav_padding");
 
+    let vh_without_nav = "none";
+    let vh_without_nav_size = 0;
+    try {
+        vh_without_nav = document.getElementById("vh_without_nav");
+        vh_without_nav_size = vh_without_nav.offsetHeight;
+    } catch { }
+
     function navsize() {
         nav_padding.style.height = nav.offsetHeight + "px";
+        if (vh_without_nav != "none") {
+            vh_without_nav.style.minHeight = (window.innerHeight-nav.offsetHeight) + "px";
+        }
     }
     navsize()
 
     new ResizeObserver(navsize).observe(nav);
+
+
+
 
     // document.querySelector('button')
 
