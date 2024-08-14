@@ -18,3 +18,12 @@ titles:
 
 main:
     temp: "This is currently a <u>temperary website</u>. It is under construction."
+
+    text:
+        hello: "Hello, I'm"
+        content1: "I am a recent Aerospace Engineering Graduate, having earned a First-Class Honours degree, I am eager to contribute to the industry."
+        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">　I have participated in projects such as the Aeolus 2 mock design as an mission engineer and the UKSEDS Olympus Rover Challenge where I lead the software team. My research project focused on hemispherical resonator gyroscopes. I hold a Master Certification in System Tool Kit (STK).</span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[Show More]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[Hide]</button>"
+
+    buttons:
+        cv: "CV"
+        contact: "Contact Me"

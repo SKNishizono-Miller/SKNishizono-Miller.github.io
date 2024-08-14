@@ -10,7 +10,7 @@ permalink: /
 
 <div class="flex flex-col md:justify-center w-full md:w-1/2 md:w-full my-auto h-fit md:min-h-dvh ">
     <h2 class="pt-6 text-sm md:text-base">
-        Hello, I'm
+        {% t main.text.hello %}
     </h2>
 
     <h1 class="text-2xl text-blue-700 font-bold text-sm md:text-5xl flex flex-wrap">
@@ -20,50 +20,18 @@ permalink: /
 
 
     <p class="py-2 text-sm md:text-base text-justify leading-tight ">
-        I am a recent Aerospace Engineering Graduate, having earned a First-Class Honours degree, I am eager to contribute to the industry.
-        <span class="hidden md:inline" id="explain-text">
-            I have participated in projects such as the Aeolus 2 mock design as an mission engineer and the UKSEDS Olympus Rover Challenge where I lead the software team. My research project focused on hemispherical resonator gyroscopes. I hold a Master Certification in System Tool Kit (STK).
-        </span>
-
-        <button id="explain-text-toggle" class="md:hidden text-gray-400 underline focus:outline-none">[Show More]</button>
-        <button id="explain-text-hide" class="hidden md:hidden text-gray-400 underline focus:outline-none">[Hide]</button>
+        {% t main.text.content1 %}
+        {% t main.text.content2 %}
     </p>
 
     <div class="flex justify-center py-2">
         <a href="{{ site.baseurl }}/cv" class="text-white text-md bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full w-32 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            CV
+            {% t main.buttons.cv %}
         </a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="py-2.5 w-32 me-2 mb-2 text-md font-medium text-center text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-            Contact me
+            {% t main.buttons.contact %}
         </a>
     </div>
-
-    <!-- <h2>
-        Contact/Follow me on:
-    </h2>
-
-
-    <div class="flex">
-        <button class="justify-center" onclick="navigator.clipboard.writeText('kiyoshi.sknm@pm.me');" data-tooltip-target="tooltip-email" data-tooltip-trigger="click">
-            <svg class="w-14 h-14 px-2" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="256" height="256" rx="60" fill="#242938"/>
-                <rect x="38" y="58" width="180" height="140" rx="20" stroke="#ddd" stroke-width="20" stroke-linecap="round"/>
-                <path d="M48 78L110 124.5C120.667 132.5 135.333 132.5 146 124.5L208 78" stroke="#ddd" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
-        <a href="https://www.linkedin.com/in/samuel-nishizono-miller/">
-            <img class="w-14 h-14 px-2" src="https://skillicons.dev/icons?i=linkedin">
-        </a>
-        <a href="https://github.com/SKNishizono-Miller">
-            <img class="w-14 h-14 px-2" src="https://skillicons.dev/icons?i=github">
-        </a>
-    </div>
-
-    <div id="tooltip-email" role="tooltip" class="invisible tooltip z-10 px-3 py-2 rounded-lg shadow-sm bg-gray-900 text-sm font-medium text-white text-center justify-center">
-        Email Copied!!!
-        <div class="tooltip-arrow" data-popper-arrow></div>
-    </div> -->
-
 
 </div>
 

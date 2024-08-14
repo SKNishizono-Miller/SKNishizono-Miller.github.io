@@ -20,3 +20,12 @@ titles:
 main:
     temp: "これは仮のウェブサイトです。健在開発中です。"
 
+    text:
+        hello: "航空宇宙エンジニア"
+        content1: "ブリストル大学工学部航空宇宙工学科の新卒です。卒業論文は半球型共振ジャイロを研究しました。学業以外では、大学対抗の火星探査機のコンペで通信機器担当を務めました。その他、日英会の幹事とオーケストラに力を入れていました。STKマスター資格を取得しています。"
+        content2: "<button id=\"explain-text-toggle\" class=\"hidden\"></button><button id=\"explain-text-hide\" class=\"hidden\"></button>"
+
+    buttons:
+        cv: "履歴書"
+        contact: "お問い合わせ"
+
