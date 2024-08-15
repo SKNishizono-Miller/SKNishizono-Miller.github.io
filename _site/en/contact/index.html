@@ -64,16 +64,16 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 px-4">
             <ul class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 md:space-x-8 md:border-0  dark:border-gray-700">
                 <li>
-                    <a href="/en" class="text-nowrap md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                    <a href="/en" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="/en/cv" class="text-nowrap block rounded text-gray-900 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">CV</a>
+                    <a href="/en/cv" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">CV</a>
                 </li>
                 <li>
-                    <a href="/en/projects" class="text-nowrap block rounded text-gray-900 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">Projects</a>
+                    <a href="/en/projects" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">Projects</a>
                 </li>
                 <li>
-                    <a href="/en/contact" class="text-nowrap block rounded text-gray-900 dark:text-white md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">Contacts</a>
+                    <a href="/en/contact" class="text-nowrap block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">Contacts</a>
                 </li>
             </ul>
         </div>
@@ -83,16 +83,16 @@
     <div class="fixed items-center justify-between hidden md:hidden w-full bg-gray-100 dark:bg-gray-800 border-b shadow" id="hamburger-menu">
         <ul class="flex flex-col font-medium p-4 dark:border-gray-700">
             <li>
-                <a href="/en" class="block py-2 px-3 text-white bg-blue-500 rounded" aria-current="page">Home</a>
+                <a href="/en" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500" aria-current="page">Home</a>
             </li>
             <li>
-                <a href="/en/cv" class="block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700">CV</a>
+                <a href="/en/cv" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">CV</a>
             </li>
             <li>
-                <a href="/en/projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700">Projects</a>
+                <a href="/en/projects" class="text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500">Projects</a>
             </li>
             <li>
-                <a href="/en/contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700">Contacts</a>
+                <a href="/en/contact" class="text-nowrap block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500">Contacts</a>
             </li>
         </ul>
     </div>
@@ -102,7 +102,8 @@
 
 
 <div class="px-4 max-w-screen-xl mx-auto">
-    
+    <div id="nav_padding"></div>
+
 </div>
 
 
@@ -157,28 +158,13 @@
 
     function navsize() {
         nav_padding.style.height = nav.offsetHeight + "px";
-        if (vh_without_nav != "none") {
+        if (vh_without_nav != null) {
             vh_without_nav.style.minHeight = (window.innerHeight-nav.offsetHeight) + "px";
         }
     }
     navsize()
 
     new ResizeObserver(navsize).observe(nav);
-
-
-
-
-    // document.querySelector('button')
-
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     document.querySelector('#McBag');
-    // });
-
-    // $(document).ready(function(){
-    //     $('#McBag').click(function(){
-    //         $('#McButton').toggleClass('open');
-    //     });
-    // });
 </script>
 
 </body>
