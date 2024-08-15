@@ -15,6 +15,7 @@ site:
 titles:
     home: "Home"
     cv: "CV"
+    contact: "Contact"
 
 main:
     temp: "This is currently a <u>temperary website</u>. It is under construction."

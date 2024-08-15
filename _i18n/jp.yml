@@ -16,6 +16,7 @@ site:
 titles:
     home: "ホーム"
     cv: "履歴書"
+    contact: "お問い合わせ"
 
 main:
     temp: "これは仮のウェブサイトです。健在開発中です。"
