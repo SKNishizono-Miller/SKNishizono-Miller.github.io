@@ -9,6 +9,8 @@ default_locale_in_subfolder: true
 
 plugins:
   - jekyll-multiple-languages-plugin
+  # - jekyll-tailwindcss
+  # - jekyll-postcss
   # - jekyll-sitemap
 
 
