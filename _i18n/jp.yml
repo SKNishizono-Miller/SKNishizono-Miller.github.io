@@ -34,3 +34,21 @@ main:
         cv: "履歴書"
         contact: "お問い合わせ"
 
+
+contact:
+    title: お問い合わせ
+    content: "  "
+
+
+cv:
+    title: 履歴書
+    download: ダウンロード
+    education:
+        title: 学歴
+        uni:
+            institution: ブリストル大学
+            degree: 航空宇宙工学修士
+        school:
+            institution: トワイフォード英国国教会高校
+            qualification: GCE上級レベル
+            content: 物理 (A*)、数学 (A*)、 上級数学 (A*)、 コンピュータ科学 (A*)、 日本語(A*)

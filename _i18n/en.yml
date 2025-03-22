@@ -33,3 +33,19 @@ main:
     buttons:
         cv: "CV"
         contact: "Contact Me"
+
+
+contact:
+    title: Contact Me
+    content: "Please get in touch via the following contacts and links:"
+
+
+
+cv:
+    title: Curriculum Vitae
+    download: Download CV
+    education:
+        title: Education
+        uni:
+            institution: The Univeristy of Bristol
+            degree: MEng Aerospace Engineering
