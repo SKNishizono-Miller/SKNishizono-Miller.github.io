@@ -68,6 +68,7 @@
     --font-weight-bold: 700;
     --leading-tight: 1.25;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
     --drop-shadow-lg: 0 4px 4px rgb(0 0 0 / 0.15);
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
@@ -404,6 +405,9 @@
   .col-auto {
     grid-column: auto;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .col-span-full {
     grid-column: 1 / -1;
   }
@@ -539,6 +543,9 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
+  .ml-auto {
+    margin-left: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -657,6 +664,9 @@
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
   .h-fit {
     height: fit-content;
   }
@@ -738,14 +748,26 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-144 {
+    width: calc(var(--spacing) * 144);
+  }
+  .w-\[108px\] {
+    width: 108px;
+  }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
   }
+  .w-sm {
+    width: var(--container-sm);
+  }
   .max-w-2xl {
     max-width: var(--container-2xl);
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -782,6 +804,9 @@
   }
   .shrink {
     flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .flex-grow {
     flex-grow: 1;
@@ -910,6 +935,9 @@
   .snap-none {
     scroll-snap-type: none;
   }
+  .snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
   .snap-mandatory {
     --tw-scroll-snap-strictness: mandatory;
   }
@@ -933,6 +961,9 @@
   }
   .snap-normal {
     scroll-snap-stop: normal;
+  }
+  .scroll-ml-4 {
+    scroll-margin-left: calc(var(--spacing) * 4);
   }
   .list-inside {
     list-style-position: inside;
@@ -960,6 +991,9 @@
   }
   .columns-auto {
     columns: auto;
+  }
+  .auto-cols-\[10rem\] {
+    grid-auto-columns: 10rem;
   }
   .auto-cols-auto {
     grid-auto-columns: auto;
@@ -1002,6 +1036,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-\[40rem\] {
+    grid-template-columns: 40rem;
   }
   .grid-cols-none {
     grid-template-columns: none;
@@ -1167,11 +1204,21 @@
       --tw-space-y-reverse: 1;
     }
   }
+  .gap-x-4 {
+    column-gap: calc(var(--spacing) * 4);
+  }
   .space-x-1 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .space-x-5 {
@@ -1269,6 +1316,12 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
   .overflow-x-hidden {
     overflow-x: hidden;
   }
@@ -1286,6 +1339,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1338,6 +1394,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-8 {
     border-style: var(--tw-border-style);
@@ -1658,9 +1718,6 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
-  }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
@@ -1678,9 +1735,6 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
-  }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
   }
   .pt-1 {
     padding-top: calc(var(--spacing) * 1);
@@ -2376,9 +2430,6 @@
   .outline-solid {
     --tw-outline-style: solid;
     outline-style: solid;
-  }
-  .\[mask-type\:luminance\] {
-    mask-type: luminance;
   }
   .backface-hidden {
     backface-visibility: hidden;
