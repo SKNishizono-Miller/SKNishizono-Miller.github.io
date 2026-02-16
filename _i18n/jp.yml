@@ -3,7 +3,7 @@ site:
 
     name1: "西園ミラー"
     name2: "サミュエル聖"
-    job: "航空宇宙エンジニア"
+    job: "リサーチ・アシスタント"
     home: "ホーム"
     cv: "履歴書"
     project: "プロジェクト"
@@ -16,7 +16,38 @@ site:
 titles:
     home: "ホーム"
     cv: "履歴書"
+    contact: "お問い合わせ"
+
+styles:
+    focused: "text-nowrap block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+    unfocused: "text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
 
 main:
     temp: "これは仮のウェブサイトです。健在開発中です。"
 
+    text:
+        hello: "リサーチ・アシスタント"
+        content1: "University College Londonにて宇宙航行力学のリサーチ・アシスタントを務め、欧州宇宙機関およびEutelsat OneWebと連携のもと、人工衛星の飛行力学解析・軌道モデリングを実施し、その成果を統合したソフトウェアの設計・開発を担当しています。"
+        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">また、University of Bristolで航空宇宙工学の修士号（MEng）を取得しました。専門は軌道力学、宇宙機システム、空気力学、複合材料構造で、CADや有限要素解析（FEA）を用いた設計・解析に取り組んできました。プログラミングはC++を中心に、MATLABやPythonも活用しています。また、Ansys STK Level 2認定を取得しています。</span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[もっと見る]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[一部を表示]</button>"
+    buttons:
+        cv: "履歴書"
+        contact: "お問い合わせ"
+
+
+contact:
+    title: お問い合わせ
+    content: "  "
+
+
+cv:
+    title: 履歴書
+    download: ダウンロード
+    education:
+        title: 学歴
+        uni:
+            institution: ブリストル大学
+            degree: 航空宇宙工学修士
+        school:
+            institution: トワイフォード英国国教会高校
+            qualification: GCE上級レベル
+            content: 物理 (A*)、数学 (A*)、 上級数学 (A*)、 コンピュータ科学 (A*)、 日本語(A*)

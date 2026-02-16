@@ -2,10 +2,73 @@
 title: titles.home
 layout: default
 permalink: /
+
+menu1: "text-nowrap block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+menu2: "text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
+menu3: "text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
+menu4: "text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
 ---
 
+<div class="min-h-dvh">
+<div id="nav_padding" class="md:hidden"></div>
+<div id="vh_without_nav" class="flex flex-col flex-wrap md:flex-row align-middle">
 
 
-<p>
-{% t main.temp %}
-</p>
+<div class="flex flex-col md:justify-center w-full md:w-1/2 my-auto h-fit md:min-h-dvh ">
+    <h2 class="pt-6 text-sm md:text-base">
+        {% t main.text.hello %}
+    </h2>
+
+    <h1 class="text-2xl text-blue-700 font-bold text-sm md:text-5xl flex flex-wrap">
+        <span class="pr-1 drop-shadow">{% t site.name1 %}</span> <span class="drop-shadow">{% t site.name2 %}</span>
+    </h1>
+
+
+
+    <p class="py-2 text-sm md:text-base text-justify leading-tight ">
+        {% t main.text.content1 %}
+        {% t main.text.content2 %}
+    </p>
+
+    <div class="flex justify-center py-2  drop-shadow-2xl">
+        <a href="{{ site.baseurl }}/cv" class="text-white text-md bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-0 focus:ring-blue-300 font-medium rounded-full w-32 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
+            {% t main.buttons.cv %}
+        </a>
+        <a href="{{ site.baseurl }}/contact" class="py-2.5 w-32 me-2 mb-2 text-md font-medium text-center text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-0 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+            {% t main.buttons.contact %}
+        </a>
+    </div>
+
+</div>
+
+<div class="flex items-end justify-center w-full md:w-1/2 drop-shadow-2xl ">
+    <div class="relative">
+        <img class=" rounded-lg" src="{{ site.baseurl_root }}/Assets/Images/grad.png" alt="Samuel Nishizono-Miller">
+        <div class="shadow-xl absolute bg-blue-200 rounded-full -z-50 right-0 bottom-1/2 w-1/3 aspect-square scale-x-[-1]"></div>
+        <div class="shadow-xl absolute bg-blue-600 rounded-full -z-50 right-1/2 bottom-1/3 w-1/3 aspect-square"></div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+    const explainText   = document.getElementById('explain-text');
+    const expTxtTogle   = document.getElementById('explain-text-toggle');
+    const expTextHide   = document.getElementById('explain-text-hide');
+
+    expTxtTogle.addEventListener('click', () => {
+        explainText.classList.toggle('hidden');
+        expTxtTogle.classList.toggle('hidden');
+        expTextHide.classList.toggle('hidden');
+    });
+
+    expTextHide.addEventListener('click', () => {
+        explainText.classList.toggle('hidden');
+        expTxtTogle.classList.toggle('hidden');
+        expTextHide.classList.toggle('hidden');
+    });
+</script>

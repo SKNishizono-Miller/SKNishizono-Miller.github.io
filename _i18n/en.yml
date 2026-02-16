@@ -3,11 +3,11 @@ site:
 
     name1: "Samuel Kiyoshi"
     name2: "Nishizono-Miller"
-    job: "Aerospace Engineer"
+    job: "Research Assistant"
     home: "Home"
     cv: "CV"
     project: "Projects"
-    contact: "Contacts"
+    contact: "Contact"
 
     email: "E-mail"
     follow: "Follow"
@@ -15,6 +15,37 @@ site:
 titles:
     home: "Home"
     cv: "CV"
+    contact: "Contact"
+
+styles:
+    focused: "text-nowrap block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+    unfocused: "text-nowrap block py-2 px-3 text-gray-900 rounded hover:bg-blue-100 md:hover:bg-transparent dark:text-white dark:hover:bg-gray-700 dark:hover:text-white dark:border-gray-700 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500"
+
 
 main:
     temp: "This is currently a <u>temperary website</u>. It is under construction."
+
+    text:
+        hello: "Hello, I'm"
+        content1: "I am a Research Assistant in Astrodynamics at University College London, where I work on space vehicle flight dynamics, modelling, and software development in collaboration with the European Space Agency (ESA), Eutelsat OneWeb, and RISE."
+        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">I hold an MEng in Aerospace Engineering from the University of Bristol. My background includes orbital dynamics, spacecraft systems, aerodynamics, and composite structures, with strong experience in CAD, FEA, and simulation tools. I primarily program in C++, alongside MATLAB and Python, and I hold an Ansys STK Level 2 certification. </span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[Show More]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[Hide]</button>"
+
+    buttons:
+        cv: "CV"
+        contact: "Contact Me"
+
+
+contact:
+    title: Contact Me
+    content: "Please get in touch via the following contacts and links:"
+
+
+
+cv:
+    title: Curriculum Vitae
+    download: Download CV
+    education:
+        title: Education
+        uni:
+            institution: The Univeristy of Bristol
+            degree: MEng Aerospace Engineering
