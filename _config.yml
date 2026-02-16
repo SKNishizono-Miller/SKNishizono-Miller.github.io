@@ -5,7 +5,7 @@ exclude_from_localizations: ["Assets","favicon.ico","404.html","base.html","site
 default_locale_in_subfolder: true
 # permalink: /:categories/:year/:month/:day/:title/
 
-# destination: doc
+destination: docs
 
 plugins:
   - jekyll-multiple-languages-plugin
