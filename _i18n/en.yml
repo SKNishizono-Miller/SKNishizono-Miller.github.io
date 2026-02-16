@@ -3,7 +3,7 @@ site:
 
     name1: "Samuel Kiyoshi"
     name2: "Nishizono-Miller"
-    job: "Aerospace Engineer"
+    job: "Research Assistant"
     home: "Home"
     cv: "CV"
     project: "Projects"
@@ -27,8 +27,8 @@ main:
 
     text:
         hello: "Hello, I'm"
-        content1: "I am a recent Aerospace Engineering Graduate, having earned a First-Class Honours degree, I am eager to contribute to the industry."
-        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">　I have participated in projects such as the Aeolus 2 mock design as an mission engineer and the UKSEDS Olympus Rover Challenge where I lead the software team. My research project focused on hemispherical resonator gyroscopes. I hold a Master Certification in System Tool Kit (STK).</span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[Show More]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[Hide]</button>"
+        content1: "I am a Research Assistant in Astrodynamics at University College London, where I work on space vehicle flight dynamics, modelling, and software development in collaboration with the European Space Agency (ESA), Eutelsat OneWeb, and RISE."
+        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">I hold an MEng in Aerospace Engineering from the University of Bristol. My background includes orbital dynamics, spacecraft systems, aerodynamics, and composite structures, with strong experience in CAD, FEA, and simulation tools. I primarily program in C++, alongside MATLAB and Python, and I hold an Ansys STK Level 2 certification. </span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[Show More]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[Hide]</button>"
 
     buttons:
         cv: "CV"
