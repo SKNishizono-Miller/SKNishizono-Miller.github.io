@@ -26,10 +26,9 @@ main:
     temp: "これは仮のウェブサイトです。健在開発中です。"
 
     text:
-        hello: "航空宇宙エンジニア"
-        content1: "ブリストル大学工学部航空宇宙工学科の新卒です。卒業論文は半球型共振ジャイロを研究しました。学業以外では、大学対抗の火星探査機のコンペで通信機器担当を務めました。その他、日英会の幹事とオーケストラに力を入れていました。STKマスター資格を取得しています。"
-        content2: "<button id=\"explain-text-toggle\" class=\"hidden\"></button><button id=\"explain-text-hide\" class=\"hidden\"></button>"
-
+        hello: "リサーチ・アシスタント"
+        content1: "University College Londonにて宇宙航行力学のリサーチ・アシスタントを務め、欧州宇宙機関およびEutelsat OneWebと連携のもと、人工衛星の飛行力学解析・軌道モデリングを実施し、その成果を統合したソフトウェアの設計・開発を担当しています。"
+        content2: "<span class=\"hidden md:inline\" id=\"explain-text\">また、University of Bristolで航空宇宙工学の修士号（MEng）を取得しました。専門は軌道力学、宇宙機システム、空気力学、複合材料構造で、CADや有限要素解析（FEA）を用いた設計・解析に取り組んできました。プログラミングはC++を中心に、MATLABやPythonも活用しています。また、Ansys STK Level 2認定を取得しています。</span><button id=\"explain-text-toggle\" class=\"md:hidden text-gray-400 underline focus:outline-none\">[もっと見る]</button><button id=\"explain-text-hide\" class=\"hidden md:hidden text-gray-400 underline focus:outline-none\">[一部を表示]</button>"
     buttons:
         cv: "履歴書"
         contact: "お問い合わせ"
